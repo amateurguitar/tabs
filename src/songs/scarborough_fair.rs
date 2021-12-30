@@ -1,7 +1,7 @@
 #!/usr/bin/env rust-script
 //! ```cargo
 //! [dependencies]
-//! notation_tab = { version = "0.3.0", path = "crates/notation_tab" }
+//! notation_tab = "0.3.2"
 //! ```
 
 use notation_tab::prelude::*;
@@ -13,7 +13,7 @@ pub fn main() {
 pub fn new_tab() -> Tab {
     tab! {
         "06dd7278-cdaf-40dd-abc6-6e66ec2d6b8c"
-        Meta: TabMeta::new(Key::E, Scale::Dorian, Signature::_3_4, Tempo::Bpm(110))
+        Meta: E Dorian 3 _4 110
         Tracks: [
             {chord Chord [
                 $duration = D_1_2
