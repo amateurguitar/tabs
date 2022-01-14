@@ -17,7 +17,7 @@ pub fn new_tab() -> Tab {
         Tracks: [
             {chord Chord [
                 $duration = _1
-                "1" Chord ( 1: )
+                "1" Chord ( 1: 1 )
             ]}
             {guitar Guitar [
                 Fretboard
