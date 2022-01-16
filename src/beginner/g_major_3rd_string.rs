@@ -1,10 +1,10 @@
 #!/usr/bin/env rust-script
 //! ```cargo
 //! [dependencies]
-//! notation_tab = "0.3.4"
+//! notation_tab = "0.4.0"
 //! ```
 
-use notation_tac::prelude::*;
+use notation_tab::prelude::*;
 
 pub fn main() {
     print_tab(&new_tab());
@@ -23,6 +23,11 @@ pub fn new_tab() -> Tab {
                 Fretboard
                 $duration = _1
                 "1" Shape ( _ _ _ 0 _ _ )
+                $duration = _1_4
+                "s:1" Pick [ 3@0 3@2 3@4 3@5 ] | 
+                "s:2" Pick [3@7 3@9 3@11 3@12 ] |
+                "s:3" Pick [3@12 3@11 3@9 3@7 ] |
+                "s:4" Pick [3@5 3@4 3@2 3@0 ] |
                 $duration = _1_8
                 "a:1" Pick [ 3@0 3@2 3@4 3@5 3@7 3@9 3@11 3@12 ] |
                 "a:2" Pick [ 3@12 3@11 3@9 3@7 3@5 3@4 3@2 3@0 ] |
@@ -68,6 +73,21 @@ pub fn new_tab() -> Tab {
             ]}
         ]
         Sections: [
+            {scale Intro [
+                {
+                    chord [ "1" 1 ]
+                    guitar [ "1" 1 ; "s:1" | ]
+                } {
+                    chord [ "1" 1 ]
+                    guitar [ "1" 1 ; "s:2" | ]
+                } {
+                    chord [ "1" 1 ]
+                    guitar [ "1" 1 ; "s:3" | ]
+                } {
+                    chord [ "1" 1 ]
+                    guitar [ "1" 1 ; "s:4" | ]
+                }
+            ]}
             {a Verse [
                 {
                     chord [ "1" 1 ]
@@ -222,7 +242,6 @@ pub fn new_tab() -> Tab {
                 }
             ]}
         ]
-        Form: a b c d e b1 b2 b3 b4 b5
+        Form: scale a b c d e b1 b2 b3 b4 b5
     }
 }
-
