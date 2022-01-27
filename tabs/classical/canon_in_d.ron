@@ -2551,7 +2551,7 @@
                     Double(
                         (
                             string: 3,
-                            fret: None,
+                            fret: Some(2),
                             fret_finger: None,
                             pick_finger: None,
                             pick_direction: None,
