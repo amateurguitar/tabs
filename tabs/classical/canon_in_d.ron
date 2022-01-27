@@ -2440,7 +2440,7 @@
                 Fretted6(Pick(
                     Single((
                         string: 4,
-                        fret: None,
+                        fret: Some(2),
                         fret_finger: None,
                         pick_finger: None,
                         pick_direction: None,
@@ -2451,7 +2451,7 @@
                     Double(
                         (
                             string: 4,
-                            fret: None,
+                            fret: Some(4),
                             fret_finger: None,
                             pick_finger: None,
                             pick_direction: None,
