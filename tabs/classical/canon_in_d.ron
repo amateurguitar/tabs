@@ -299,12 +299,12 @@
                 )),// [18]
                 Mark("|"),// [19]
                 Mark("i:4"),// [20]
-                Mark("Em7/B"),// [21]
+                Mark("G"),// [21]
                 Fretted6(Shape(
                     (
                         barre: None,
                         frets: (
-                            Some(0),
+                            None,
                             Some(0),
                             Some(0),
                             Some(0),
