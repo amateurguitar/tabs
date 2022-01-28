@@ -93,13 +93,12 @@
                 Mark("i:4"),// [13]
                 Core(Chord(
                     (
-                        root: Re,
-                        intervals: Tetrad(
-                            Minor3nd,
+                        root: Fa,
+                        intervals: Triad(
+                            Major3nd,
                             Perfect5th,
-                            Minor7th,
                         ),
-                        bass: Some(Minor3nd),
+                        bass: None,
                     ),
                     Simple(Half),
                 )),// [14]

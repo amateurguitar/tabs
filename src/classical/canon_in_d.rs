@@ -21,7 +21,7 @@ pub fn new_tab() -> Tab {
                     Chord ( 4: 3 5 )
                     Chord ( 1: 3 5 ) |
                 "i:4"
-                    Chord ( 2: 3- 5 7- /3-)
+                    Chord ( 4: 3 5 )
                     Chord ( 5: 3 5 ) |
                 $duration = _1
                 "ending" Chord (1: 3 5) |
