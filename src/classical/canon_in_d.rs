@@ -39,7 +39,7 @@ pub fn new_tab() -> Tab {
                     "G" Shape ( 5 2 0 0 0 _ ) 
                     "D" Shape ( 0 5 4 2 3 2 ) |
                 "i:4"
-                    "Em7/B" Shape ( 5 2 0 0 0 0 ) 
+                    "G" Shape ( 5 2 0 0 0 _ ) 
                     "A" Shape ( _ 0 2 2 2 0 ) |
                 $duration = _1_2
                 "b:1" Pick [ 6 5 ] |
